@@ -6,7 +6,6 @@
 		"outDir": "dist"
 	},
 	"files": [
-		"index.ts",
-		"fetch.browser.ts"
+		"index.ts"
 	]
 }

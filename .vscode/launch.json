@@ -14,8 +14,9 @@
 					"program": "${workspaceFolder}/dist/index.js",
 					"preLaunchTask": "build",
 					"args": [
-						"-f",
-						"test5.json output/"
+						"1000",
+						"https://google.com",
+						"https://api.payfunc.com/version"
 					],
 					"outFiles": [
 							"${workspaceFolder}/dist/**/*.js"
