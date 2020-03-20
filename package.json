@@ -1,12 +1,12 @@
 {
-	"name": "timery",
-	"version": "1.0.0",
-	"description": "",
-	"author": "",
+	"name": "uply",
+	"version": "0.0.0",
+	"description": "Tool to test endpoint response times.",
+	"author": "PayFunc",
 	"license": "MIT",
 	"private": false,
 	"bin": {
-		"payfunc-server-test": "dist/index.js"
+		"uply": "dist/index.js"
 	},
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",
@@ -27,20 +27,20 @@
 	},
 	"jest": {
 		"globals": {
-		"ts-jest": {
-			"tsConfig": "tsconfig.test.json"
-		}
+			"ts-jest": {
+				"tsConfig": "tsconfig.test.json"
+			}
 		},
 		"testEnvironment": "node",
 		"testRegex": "((\\.|/)(test|spec))(\\.|\\/.+)(jsx?|tsx?)$",
 		"testPathIgnorePatterns": [
-		"node_modules/",
-		"dist/"
+			"node_modules/",
+			"dist/"
 		],
 		"collectCoverageFrom": [
-		"**/*.{ts,tsx,js,jsx}",
-		"!**/node_modules/**",
-		"!**/dist/**"
+			"**/*.{ts,tsx,js,jsx}",
+			"!**/node_modules/**",
+			"!**/dist/**"
 		],
 		"preset": "ts-jest",
 		"testMatch": null
@@ -55,25 +55,19 @@
 		"clean": "rm -rf dist node_modules coverage"
 	},
 	"dependencies": {
-		"@payfunc/model": "0.1.47",
-		"@cardfunc/model": "0.0.48",
-		"authly": "0.0.35",
-		"dotenv": "^8.2.0",
-		"commander": "^4.1.1",
-		"gracely": "0.0.25",
-		"isoly": "0.0.12",
+		"isoly": "0.0.13",
 		"node-fetch": "^2.6.0",
 		"perf_hooks": "0.0.1"
 	},
 	"devDependencies": {
 		"@types/jest": "^25.1.4",
-		"@types/node": "^13.9.0",
+		"@types/node": "^13.9.2",
 		"@types/node-fetch": "^2.5.5",
 		"babel-core": "^6.26.3",
 		"babel-jest": "^25.1.0",
 		"jest": "^25",
 		"ts-jest": "^25.2.1",
-		"tslint": "^6.0.0",
+		"tslint": "^6.1.0",
 		"typescript": "^3.8.3",
 		"typescript-tslint-plugin": "^0.5.5",
 		"watch": "^1.0.2"
