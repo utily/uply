@@ -1,6 +1,11 @@
 # uply
 Utility to measure web service uptimes.
 
+## Installation
+```
+npm install --global uply
+```
+
 ## Usage
 ```
 uply <intervall in ms> <url 1> <url 2> ....
