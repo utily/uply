@@ -14,7 +14,7 @@ else
 const endpoints = argument
 
 if (endpoints.length == 0)
-	console.error("No endpoint url:s given.")
+	console.error("usage: uply <intervall in ms> <url 1> <url 2>\nexample: uply 1000 https://google.com https://dn.se")
 else {
 	console.error("starting")
 	console.log(["started", ...endpoints].join(","))
