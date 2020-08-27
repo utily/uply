@@ -21,11 +21,13 @@ else {
 	const timer = setInterval(async () => {
 		const started = isoly.DateTime.now()
 		const start = performance.now()
-		const responses = await Promise.all(endpoints.map(async url => {
-			const response = await fetch(url)
-			const _ = await response.text()
-			return performance.now() - start
-		}))
+		const responses = await Promise.all(
+			endpoints.map(async url => {
+				const response = await fetch(url)
+				await response.text()
+				return performance.now() - start
+			})
+		)
 		console.log([started, ...responses].join(","))
 	}, interval)
 
