@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import * as isoly from "isoly"
-import { performance } from "perf_hooks"
 import { default as fetch } from "node-fetch"
+import { performance } from "perf_hooks"
 
 const argument = process.argv.slice(2)
 
